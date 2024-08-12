@@ -9,12 +9,20 @@ export const siteConfig = {
       href: "/",
     },
     {
+      label: "游玩游戏",
+      href: "/join",
+    },
+    {
       label: "服务器规则",
       href: "/rules",
     },
     {
-      label: "游玩游戏",
-      href: "/join",
+      label: "近期新闻",
+      href: "/news",
+    },
+    {
+      label: "加入我们",
+      href: "/join-us",
     },
   ],
   links: {
