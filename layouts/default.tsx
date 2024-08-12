@@ -13,7 +13,7 @@ export default function DefaultLayout({
     <div className="relative flex flex-col h-screen">
       <Head />
       <Navbar />
-      <main className="container flex-grow">{children}</main>
+      <main className="w-full flex-grow">{children}</main>
       <footer className="w-full flex flex-col items-center justify-center py-3">
         <Link
           isExternal

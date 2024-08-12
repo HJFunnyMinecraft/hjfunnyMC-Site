@@ -11,7 +11,7 @@ export default function JoinPage() {
     <DefaultLayout>
       <section className="max-w-6xl mx-auto px-10 py-5 my-8">
         <h2 className="text-lg font-bold">游玩游戏</h2>
-        <Card className="container gap-4 mt-5 p-8">
+        <Card className="gap-4 mt-5 p-8">
           <p>首先, 您需要点击下方链接注册账号并加入QQ群。</p>
           <div>
             <NextLink href={"/register"}>
@@ -76,7 +76,7 @@ export default function JoinPage() {
           </Tab>
         </Tabs>
         <h2 className="text-lg font-bold">申请白名单</h2>
-        <Card className="container gap-4 mt-5 p-8">
+        <Card className="gap-4 mt-5 p-8">
           <p>为了防止服务器内被恶意破坏，hjMC 子服务器已开启白名单机制。</p>
           <p>如需要申请白名单请加入上方 QQ 群并联系管理员了解详情。</p>
         </Card>

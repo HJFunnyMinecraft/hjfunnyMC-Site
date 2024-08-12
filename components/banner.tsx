@@ -18,7 +18,9 @@ export default function Banner() {
         <h1 className="text-3xl font-extrabold bg-gradient-to-r from-blue-500 via-pink-500 to-green-500 text-transparent bg-clip-text">
           hjfunnyMC 官方网站
         </h1>
-        <h2 className="font-bold">这里是 hjfunnyMC 官网，我们欢迎您的到来！</h2>
+        <h2 className="font-bold text-black">
+          这里是 hjfunnyMC 官网，我们欢迎您的到来！
+        </h2>
         <Button
           className="mt-2"
           color="primary"

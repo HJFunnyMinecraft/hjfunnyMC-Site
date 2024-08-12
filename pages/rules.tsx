@@ -9,7 +9,7 @@ export default function JoinPage() {
       <section className="max-w-6xl mx-auto px-10 py-5 my-8">
         <h2 className="text-lg font-bold">服务器规则</h2>
         <p>最后更新：2024 年 8 月 12 日</p>
-        <Card className="container gap-4 mt-5 p-8">
+        <Card className="gap-4 mt-5 p-8">
           <h2 className="text-lg font-bold">hjfunnyMC 用户协议</h2>
           <p>
             1.
@@ -204,7 +204,7 @@ export default function JoinPage() {
             服务，即视为您已接受变更后的协议。
           </p>
         </Card>
-        <Card className="container gap-4 mt-5 p-8">
+        <Card className="gap-4 mt-5 p-8">
           <h2 className="text-lg font-bold">hjfunnyMC 隐私协议</h2>
           <p>1. hjfunnyMC 在合理范围内收集以下与用户关联的数据：</p>
 
@@ -262,7 +262,7 @@ export default function JoinPage() {
             用户有权利申请完全删除自己的用户数据，如希望这样做，可以联系任何的管理员，操作将在7个工作日内完成。
           </p>
         </Card>
-        <Card className="container gap-4 mt-5 p-8">
+        <Card className="gap-4 mt-5 p-8">
           <h2 className="text-lg font-bold">
             <Link href="https://www.minecraft.net/zh-hans/eula">
               Minecraft EULA

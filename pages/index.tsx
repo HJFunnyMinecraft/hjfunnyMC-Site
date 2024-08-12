@@ -9,7 +9,7 @@ export default function IndexPage() {
   return (
     <DefaultLayout>
       <Banner />
-      <section className="container mx-auto max-w-6xl pt-16 px-10 space-y-5 mb-8">
+      <section className="mx-auto max-w-6xl pt-16 px-10 space-y-5 mb-8">
         <div className="flex flex-col items-center">
           <h2 className="text-2xl font-bold mb-3">服务器地址</h2>
           <Snippet
