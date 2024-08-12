@@ -70,10 +70,8 @@ export default function JoinPage() {
                 <p>Geyser 服务可能不稳定，如无法连接请联系管理员。</p>
               </Card>
               <p>请使用如下连接信息：</p>
-              <section className="flex space-x-2">
-                <Snippet symbol="地址">mcbe.hjfunny.site</Snippet>
-                <Snippet symbol="端口">15036</Snippet>
-              </section>
+              <Snippet symbol="地址">mcbe.hjfunny.site</Snippet>
+              <Snippet symbol="端口">15036</Snippet>
             </Card>
           </Tab>
         </Tabs>

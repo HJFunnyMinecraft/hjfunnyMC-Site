@@ -24,7 +24,7 @@ export default function DefaultLayout({
           <span className="text-default-600">Powered by</span>
           <p className="text-primary">hjfunnyMC Team</p>
         </Link>
-        <span className="text-default-600 text-sm">
+        <span className="text-default-600 text-sm px-5">
           hjfunnyMC
           是公益项目，不接受任何资金支持。如有任何人员要求充值/赞助请立即拒绝并尽快联系管理员。
         </span>
