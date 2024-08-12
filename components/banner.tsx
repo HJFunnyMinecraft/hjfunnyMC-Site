@@ -1,5 +1,5 @@
 import { Button } from "@nextui-org/button";
-import { Link } from "@nextui-org/link";
+import NextLink from "next/link";
 
 export default function Banner() {
   return (
@@ -17,11 +17,11 @@ export default function Banner() {
           hjfunnyMC 官方网站
         </h1>
         <h2 className="font-bold">这里是 hjfunnyMC 官网，我们欢迎您的到来！</h2>
-        <Link href="/join">
+        <NextLink href={"/join"}>
           <Button className="mt-2" color="primary" size="lg">
             立即游玩
           </Button>
-        </Link>
+        </NextLink>
       </section>
     </section>
   );
