@@ -19,6 +19,7 @@ function ServerCard(props: {
       </CardHeader>
       <Image
         removeWrapper
+        alt={props.title + ": " + props.content}
         className="z-0 w-full h-full object-cover"
         height={340}
         src={props.image}

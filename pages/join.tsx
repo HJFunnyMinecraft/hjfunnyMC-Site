@@ -10,7 +10,7 @@ export default function JoinPage() {
   return (
     <DefaultLayout>
       <section className="max-w-6xl mx-auto px-10 py-5 my-8">
-        <h2 className="text-lg font-bold">游玩游戏</h2>
+        <h1 className="text-lg font-bold">游玩游戏</h1>
         <Card className="gap-4 mt-5 p-8">
           <p>首先, 您需要点击下方链接注册账号并加入QQ群。</p>
           <div>

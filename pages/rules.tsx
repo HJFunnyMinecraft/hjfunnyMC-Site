@@ -7,7 +7,7 @@ export default function JoinPage() {
   return (
     <DefaultLayout>
       <section className="max-w-6xl mx-auto px-10 py-5 my-8">
-        <h2 className="text-lg font-bold">服务器规则</h2>
+        <h1 className="text-lg font-bold">服务器规则</h1>
         <p>最后更新：2024 年 8 月 12 日</p>
         <Card className="gap-4 mt-5 p-8">
           <h2 className="text-lg font-bold">hjfunnyMC 用户协议</h2>
