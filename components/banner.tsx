@@ -1,7 +1,9 @@
 import { Button } from "@nextui-org/button";
-import NextLink from "next/link";
+import { useRouter } from "next/router";
 
 export default function Banner() {
+  const router = useRouter();
+
   return (
     <section
       className="flex justify-center items-center w-full h-svh"
@@ -17,11 +19,16 @@ export default function Banner() {
           hjfunnyMC 官方网站
         </h1>
         <h2 className="font-bold">这里是 hjfunnyMC 官网，我们欢迎您的到来！</h2>
-        <NextLink href={"/join"}>
-          <Button className="mt-2" color="primary" size="lg">
-            立即游玩
-          </Button>
-        </NextLink>
+        <Button
+          className="mt-2"
+          color="primary"
+          size="lg"
+          onClick={() => {
+            router.push("/join");
+          }}
+        >
+          立即游玩
+        </Button>
       </section>
     </section>
   );

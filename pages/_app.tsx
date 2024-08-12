@@ -11,7 +11,7 @@ export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
 
   return (
-    <NextUIProvider navigate={router.push}>
+    <NextUIProvider locale="zh-CN" navigate={router.push}>
       <NextThemesProvider>
         <Component {...pageProps} />
       </NextThemesProvider>
