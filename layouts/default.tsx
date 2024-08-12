@@ -13,19 +13,21 @@ export default function DefaultLayout({
     <div className="relative flex flex-col h-screen">
       <Head />
       <Navbar />
-      <main className="container mx-auto max-w-7xl px-6 flex-grow pt-16">
-        {children}
-      </main>
-      <footer className="w-full flex items-center justify-center py-3">
+      <main className="container flex-grow">{children}</main>
+      <footer className="w-full flex flex-col items-center justify-center py-3">
         <Link
           isExternal
           className="flex items-center gap-1 text-current"
-          href="https://nextui-docs-v2.vercel.app?utm_source=next-pages-template"
-          title="nextui.org homepage"
+          href="https://mc.hjfunny.site/"
+          title="hjfunnyMC"
         >
           <span className="text-default-600">Powered by</span>
-          <p className="text-primary">NextUI</p>
+          <p className="text-primary">hjfunnyMC Team</p>
         </Link>
+        <span className="text-default-600 text-sm">
+          hjfunnyMC
+          是公益项目，不接受任何资金支持。如有任何人员要求充值/赞助请立即拒绝并尽快联系管理员。
+        </span>
       </footer>
     </div>
   );
