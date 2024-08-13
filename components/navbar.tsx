@@ -62,12 +62,19 @@ export const Navbar = () => {
         </ul>
       </NavbarContent>
 
-      <NavbarContent
-        className="hidden sm:flex basis-1/5 sm:basis-full"
-        justify="end"
-      >
-        <NavbarItem className="hidden sm:flex gap-2">
-          <Link isExternal aria-label="Github" href={siteConfig.links.github}>
+      <NavbarContent className="flex basis-1/5 sm:basis-full" justify="end">
+        <NavbarItem className="flex gap-2">
+          <Link className="hidden sm:inline-flex" href="/2anniversary">
+            <span className="font-bold bg-gradient-to-r from-orange-500 via-blue-500 to-purple-500 text-transparent bg-clip-text">
+              两周年庆
+            </span>
+          </Link>
+          <Link
+            isExternal
+            aria-label="Github"
+            className="hidden sm:inline-flex"
+            href={siteConfig.links.github}
+          >
             <GithubIcon className="text-default-500" />
           </Link>
           <ThemeSwitch />
@@ -102,13 +109,6 @@ export const Navbar = () => {
             </>
           )}
         </NavbarItem>
-      </NavbarContent>
-
-      <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
-        <Link isExternal aria-label="Github" href={siteConfig.links.github}>
-          <GithubIcon className="text-default-500" />
-        </Link>
-        <ThemeSwitch />
       </NavbarContent>
     </NextUINavbar>
   );
