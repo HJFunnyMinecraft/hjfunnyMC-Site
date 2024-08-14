@@ -19,7 +19,7 @@ export default function Banner() {
           hjfunnyMC
         </h1>
         <h2 className="font-bold text-gray-800">
-          hjfunnyMC是一个Minecraft群组服, 我们欢迎您的到来!
+          这里是 hjfunnyMC 官网，我们欢迎您的到来!
         </h2>
         <Button
           className="mt-2"
