@@ -5,9 +5,9 @@ type _State = {
   hover: boolean;
 };
 
-export class ServerUrlSnippet extends Component<undefined, _State> {
+export class ServerUrlSnippet extends Component<{}, _State> {
   constructor() {
-    super(undefined);
+    super({});
     this.state = { hover: false };
   }
 

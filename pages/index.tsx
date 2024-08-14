@@ -1,5 +1,3 @@
-import { Snippet } from "@nextui-org/snippet";
-
 import DefaultLayout from "@/layouts/default";
 import { Shinings } from "@/components/shinings";
 import Banner from "@/components/banner";
