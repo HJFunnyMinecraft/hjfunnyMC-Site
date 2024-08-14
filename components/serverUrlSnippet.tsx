@@ -6,8 +6,8 @@ type _State = {
 };
 
 export class ServerUrlSnippet extends Component<{}, _State> {
-  constructor() {
-    super({});
+  constructor(props: any) {
+    super(props);
     this.state = { hover: false };
   }
 

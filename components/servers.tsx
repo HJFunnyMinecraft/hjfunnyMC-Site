@@ -12,7 +12,7 @@ function ServerCard(props: {
     <Card className="transition ease-in-out hover:scale-105 hover:-translate-y-4">
       <Image
         removeWrapper
-        alt={props.title + " [图片]"}
+        alt={`${props.title}: ${props.content}`}
         className="z-0 w-full h-full object-cover"
         height={340}
         src={props.image}

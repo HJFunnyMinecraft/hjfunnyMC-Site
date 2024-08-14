@@ -14,7 +14,7 @@ export default function Banner() {
         backgroundSize: "cover",
       }}
     >
-      <section className="flex flex-col items-center bg-[#FFFFFF88] backdrop-blur-lg w-auto px-16 py-16 space-y-2 rounded-lg shadow-lg">
+      <section className="flex flex-col items-center bg-[#FFFFFF88] backdrop-blur-lg w-auto px-[8%] py-[4%] md:px-16 md:py-16 space-y-2 rounded-lg shadow-lg">
         <h1 className="text-5xl font-extrabold bg-gradient-to-r from-blue-500 via-pink-500 to-green-500 text-transparent bg-clip-text">
           hjfunnyMC
         </h1>

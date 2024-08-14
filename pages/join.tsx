@@ -29,7 +29,7 @@ export default function JoinPage() {
               </Button>
             </NextLink>
           </div>
-          <p>QQ群号: 799512425</p>
+          <p>(或使用群号: 799512425)</p>
           <p>注意：</p>
           <p>
             1. 用户名即为 Minecraft 档案名
@@ -77,7 +77,7 @@ export default function JoinPage() {
         </Tabs>
         <h2 className="text-lg font-bold">申请白名单</h2>
         <Card className="gap-4 mt-5 p-8">
-          <p>为了防止服务器内被恶意破坏, hjMC 部分子服务器已开启白名单机制。</p>
+          <p>为了防止服务器内被恶意破坏, hjMC 子服务器已开启白名单机制。</p>
           <p>如需要申请白名单请加入上方 QQ 群并联系管理员了解详情。</p>
         </Card>
       </section>
