@@ -24,7 +24,6 @@ function ServerCard(props: {
         <h4 className="font-bold text-3xl">{props.title}</h4>
         <p>{props.content}</p>
       </CardHeader>
-      
     </Card>
   );
 }
