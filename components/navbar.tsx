@@ -25,12 +25,12 @@ export const Navbar = () => {
         .then((response) => response.json())
         .then((data: { login: boolean }) => {
           setLogin(data.login);
-          console.log("用户登陆状态", data);
-        })
-        .catch((e) => {
-          console.error(e);
-          console.warn("Navbar可能无法正常工作!");
+          // console.log("用户登陆状态", data);
         });
+      // .catch((e) => {
+      // console.error(e);
+      // console.warn("Navbar可能无法正常工作!");
+      // });
     }
     fetchData();
   });

@@ -9,21 +9,21 @@ function ServerCard(props: {
   color: string;
 }) {
   return (
-    <Card>
-      <CardHeader
-        className="flex flex-col absolute z-10 top-1 items-start"
-        style={{ color: props.color, textShadow: "0 0 5px #999999" }}
-      >
-        <h4 className="font-bold text-lg">{props.title}</h4>
-        <p>{props.content}</p>
-      </CardHeader>
+    <Card className="transition ease-in-out hover:scale-105 hover:-translate-y-4">
       <Image
         removeWrapper
-        alt={props.title + ": " + props.content}
+        alt={`${props.title}: ${props.content}`}
         className="z-0 w-full h-full object-cover"
         height={340}
         src={props.image}
       />
+      <CardHeader
+        className="flex flex-col absolute z-10 top-1 items-start"
+        style={{ color: props.color, textShadow: "0 0 5px #999999" }}
+      >
+        <h4 className="font-bold text-3xl">{props.title}</h4>
+        <p>{props.content}</p>
+      </CardHeader>
     </Card>
   );
 }

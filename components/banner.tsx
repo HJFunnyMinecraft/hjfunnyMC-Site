@@ -14,12 +14,12 @@ export default function Banner() {
         backgroundSize: "cover",
       }}
     >
-      <section className="flex flex-col items-center bg-[#FFFFFF88] backdrop-blur-lg w-auto px-[8%] py-[4%] space-y-2 rounded-lg shadow-lg">
-        <h1 className="text-3xl font-extrabold bg-gradient-to-r from-blue-500 via-pink-500 to-green-500 text-transparent bg-clip-text">
-          hjfunnyMC 官方网站
+      <section className="flex flex-col items-center bg-[#FFFFFF88] backdrop-blur-lg w-auto px-[8%] py-[4%] md:px-16 md:py-16 space-y-2 rounded-lg shadow-lg">
+        <h1 className="text-5xl font-extrabold bg-gradient-to-r from-blue-500 via-pink-500 to-green-500 text-transparent bg-clip-text">
+          hjfunnyMC
         </h1>
-        <h2 className="font-bold text-black">
-          这里是 hjfunnyMC 官网，我们欢迎您的到来！
+        <h2 className="font-bold text-gray-800">
+          这里是 hjfunnyMC 官网，我们欢迎您的到来!
         </h2>
         <Button
           className="mt-2"
