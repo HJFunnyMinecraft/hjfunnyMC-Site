@@ -8,7 +8,7 @@ export default function JoinPage() {
     <DefaultLayout>
       <section className="max-w-6xl mx-auto px-10 py-5 my-8">
         <h1 className="text-lg font-bold">服务器规则</h1>
-        <p>最后更新：2024 年 8 月 12 日</p>
+        <p>最后更新：2024 年 8 月 17 日</p>
         <Card className="gap-4 mt-5 p-8">
           <h2 className="text-lg font-bold">hjfunnyMC 用户协议</h2>
           <p>
@@ -206,19 +206,25 @@ export default function JoinPage() {
         </Card>
         <Card className="gap-4 mt-5 p-8">
           <h2 className="text-lg font-bold">hjfunnyMC 隐私协议</h2>
-          <p>1. hjfunnyMC 在合理范围内收集以下与用户关联的数据：</p>
+          <p>
+            1. hjfunnyMC 在合理范围内收集以下{" "}
+            <span className="font-bold">与用户关联的数据</span>：
+          </p>
 
           <p>
             用户的 Minecraft 档案名、邮箱地址。
             <br />
-            用户的 IP。
+            用户的登录 IP、网络延迟。
             <br />
             用户的登录信息、数据。
             <br />
             用户在服务器内的所有操作记录。
           </p>
 
-          <p>2. hjfunnyMC 在合理范围内收集以下与用户无关的数据：</p>
+          <p>
+            2. hjfunnyMC 在合理范围内收集以下{" "}
+            <span className="font-bold">与用户无关的数据</span>：
+          </p>
 
           <p>用户访问服务的日志。</p>
 
@@ -227,7 +233,10 @@ export default function JoinPage() {
             有权利对用户数据进行跨境传输，您的数据将在被加密后通过网络传输。
           </p>
 
-          <p>4. hjfunnyMC 与以下第三方服务共享与用户无关的用户数据：</p>
+          <p>
+            4. hjfunnyMC 与以下第三方服务共享{" "}
+            <span className="font-bold">与用户无关的用户数据</span>：
+          </p>
 
           <p>
             WordPress（wordpress.com）。
@@ -235,39 +244,60 @@ export default function JoinPage() {
             Minecraft（www.minecraft.net）。
             <br />
             SpigotMC（www.spigotmc.org）。
+          </p>
+
+          <p>
+            5. hjfunnyMC 使用以下第三方服务处理{" "}
+            <span className="font-bold">已加密的用户数据</span>
+            （第三方服务无法直接读取这些被加密的数据）：
+          </p>
+
+          <p>
+            雨云（www.rainyun.com）。
             <br />
-            PaperMC（papermc.io）。
+            RackNerd LCC.（https://racknerd.com/）
           </p>
 
           <p>
-            5. hjfunnyMC
-            使用以下第三方服务处理已加密的用户数据（第三方服务无法直接读取这些被加密的数据）：
-          </p>
-
-          <p>雨云（www.rainyun.com）。</p>
-
-          <p>
-            6. hjfunnyMC
-            承诺将对用户的数据进行保密，除非取得用户的同意，否则不会将数据主动传输给第三方。
+            6. hjfunnyMC 提供{" "}
+            <Link href="https://api.hjfunny.site/">开放 API</Link>{" "}
+            服务，目前，其他玩家可以通过调用 API 的方式访问您的如下数据：
           </p>
 
           <p>
-            7.
+            您的首次注册时间和上次登录时间。
+            <br />
+            您在 BedWars
+            起床战争服务器中的击杀数、死亡数、胜利数、失败数等数据。
+          </p>
+
+          <p>
+            此服务默认开启，如您不希望共享您的数据，您可以随时联系管理员进行删除处理。
+          </p>
+
+          <p>
+            7. hjfunnyMC 承诺将对{" "}
+            <span className="font-bold">用户的私有数据</span>{" "}
+            进行保密，除非取得用户的同意，否则不会将数据主动传输给第三方。
+          </p>
+
+          <p>
+            8.
             如用户因自身原因（如密码过弱、无意泄露密码）而导致用户数据泄露，hjfunnyMC
             不负任何责任。
           </p>
 
           <p>
-            8.
-            用户有权利申请完全删除自己的用户数据，如希望这样做，可以联系任何的管理员，操作将在7个工作日内完成。
+            9.
+            用户有权利申请完全删除自己的用户数据，如希望这样做，可以联系任何的管理员，操作将在
+            7 个工作日内完成。
           </p>
         </Card>
         <Card className="gap-4 mt-5 p-8">
-          <h2 className="text-lg font-bold">
-            <Link href="https://www.minecraft.net/zh-hans/eula">
-              Minecraft EULA
-            </Link>
-          </h2>
+          <h2 className="text-lg font-bold">Minecraft EULA</h2>
+          <Link href="https://www.minecraft.net/zh-hans/eula">
+            点击查看 Minecraft EULA
+          </Link>
         </Card>
       </section>
     </DefaultLayout>
