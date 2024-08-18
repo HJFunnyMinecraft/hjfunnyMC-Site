@@ -6,7 +6,7 @@ import { ServerUrlSnippet } from "@/components/serverUrlSnippet";
 
 export default function IndexPage() {
   return (
-    <DefaultLayout>
+    <DefaultLayout title="首页">
       <Banner />
       <section className="mx-auto max-w-6xl pt-16 px-10 space-y-5 mb-8">
         <div className="flex flex-col items-center">

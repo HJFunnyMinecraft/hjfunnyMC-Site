@@ -17,7 +17,7 @@ export const siteConfig = {
       href: "/rules",
     },
     {
-      label: "近期新闻",
+      label: "最近新闻",
       href: "/news",
     },
     {

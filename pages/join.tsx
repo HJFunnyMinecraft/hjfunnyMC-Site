@@ -8,7 +8,7 @@ import DefaultLayout from "@/layouts/default";
 
 export default function JoinPage() {
   return (
-    <DefaultLayout>
+    <DefaultLayout title="游玩游戏">
       <section className="max-w-6xl mx-auto px-10 py-5 my-8">
         <h1 className="text-lg font-bold">游玩游戏</h1>
         <Card className="gap-4 mt-5 p-8">

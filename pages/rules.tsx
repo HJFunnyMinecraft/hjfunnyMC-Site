@@ -5,7 +5,7 @@ import DefaultLayout from "@/layouts/default";
 
 export default function JoinPage() {
   return (
-    <DefaultLayout>
+    <DefaultLayout title="服务器规则">
       <section className="max-w-6xl mx-auto px-10 py-5 my-8">
         <h1 className="text-lg font-bold">服务器规则</h1>
         <p>最后更新：2024 年 8 月 17 日</p>

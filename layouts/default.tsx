@@ -5,13 +5,15 @@ import { Head } from "./head";
 import { Navbar } from "@/components/navbar";
 
 export default function DefaultLayout({
+  title,
   children,
 }: {
+  title: string;
   children: React.ReactNode;
 }) {
   return (
     <div className="relative flex flex-col h-screen">
-      <Head />
+      <Head title={title} />
       <Navbar />
       <main className="w-full flex-grow">{children}</main>
       <footer className="w-full flex flex-col items-center justify-center py-3">

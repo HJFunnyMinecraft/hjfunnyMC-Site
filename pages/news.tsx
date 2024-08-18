@@ -1,10 +1,10 @@
 "use client";
 import { useEffect, useState } from "react";
+import { Skeleton } from "@nextui-org/skeleton";
+import { Card } from "@nextui-org/card";
 
 import DefaultLayout from "@/layouts/default";
 import { Passage } from "@/components/wppassage";
-import { Skeleton } from "@nextui-org/skeleton";
-import { Card } from "@nextui-org/card";
 
 export default function NewsPage() {
   const [passages, setPassages] = useState([]);
@@ -20,30 +20,37 @@ export default function NewsPage() {
   }, []);
 
   return (
-    <DefaultLayout>
+    <DefaultLayout title="最近新闻">
       <section className="max-w-6xl mx-auto px-10 py-5 my-8">
         <h1 className="text-lg font-bold">最近新闻</h1>
-        
-          {loading ? (
-            <Card className="mt-5 p-8">
-              <Skeleton className="rounded-lg mb-2">
-                <h2>Skeleton</h2>
-              </Skeleton>
-              <Skeleton className="rounded-lg">
-                <h2>Skeleton<br/>Skeleton<br/>Skeleton<br/>Skeleton</h2>
-              </Skeleton>
-            </Card>
-          ) : (
-            passages.map((passage) => (
-              <Passage
-                key={passage["id"]}
-                description={passage["excerpt"]["rendered"]}
-                publishtime={passage["date"]}
-                title={passage["title"]["rendered"]}
-                url={`/post/${passage["slug"]}`}
-              />
-            ))
-          )}
+        {loading ? (
+          <Card className="mt-5 p-8">
+            <Skeleton className="rounded-lg mb-2">
+              <h2>Skeleton</h2>
+            </Skeleton>
+            <Skeleton className="rounded-lg">
+              <h2>
+                Skeleton
+                <br />
+                Skeleton
+                <br />
+                Skeleton
+                <br />
+                Skeleton
+              </h2>
+            </Skeleton>
+          </Card>
+        ) : (
+          passages.map((passage) => (
+            <Passage
+              key={passage["id"]}
+              description={passage["excerpt"]["rendered"]}
+              publishtime={passage["date"]}
+              title={passage["title"]["rendered"]}
+              url={`/post/${passage["slug"]}`}
+            />
+          ))
+        )}
       </section>
     </DefaultLayout>
   );

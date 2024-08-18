@@ -108,7 +108,7 @@ export default function JoinPage() {
   ];
 
   return (
-    <DefaultLayout>
+    <DefaultLayout title="2周年庆">
       <section className="max-w-6xl mx-auto px-10 py-5 my-8">
         <h1 className="text-lg font-bold">2 周年庆合照全集</h1>
         <p>此页面图片较多，请耐心等待加载</p>
