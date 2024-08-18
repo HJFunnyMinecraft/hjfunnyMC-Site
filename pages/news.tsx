@@ -8,14 +8,17 @@ import { Passage } from "@/components/wppassage";
 
 export default function NewsPage() {
   const [passages, setPassages] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [loadStat, setLoadStat] = useState("loading");
 
   useEffect(() => {
     fetch("https://mc.hjfunny.site/wp-json/wp/v2/posts?per_page=20")
       .then((response) => response.json())
       .then((data) => {
         setPassages(data);
-        setLoading(false);
+        setLoadStat("loaded");
+      })
+      .catch(() => {
+        setLoadStat("error");
       });
   }, []);
 
@@ -23,8 +26,8 @@ export default function NewsPage() {
     <DefaultLayout title="最近新闻">
       <section className="max-w-6xl mx-auto px-10 py-5 my-8">
         <h1 className="text-lg font-bold">最近新闻</h1>
-        {loading ? (
-          <Card className="mt-5 p-8">
+        {loadStat == "loading" ? (
+          <Card className="mt-5 p-5">
             <Skeleton className="rounded-lg mb-2">
               <h2>Skeleton</h2>
             </Skeleton>
@@ -40,16 +43,21 @@ export default function NewsPage() {
               </h2>
             </Skeleton>
           </Card>
-        ) : (
+        ) : loadStat == "loaded" ? (
           passages.map((passage) => (
             <Passage
               key={passage["id"]}
               description={passage["excerpt"]["rendered"]}
               publishtime={passage["date"]}
               title={passage["title"]["rendered"]}
-              url={`/post/${passage["slug"]}`}
+              // url={`/post/${passage["slug"]}`}
+              url={`/viewpassage?id=${passage["id"]}`}
             />
           ))
+        ) : (
+          <Card className="mt-5 p-8">
+            <h2 className="text-lg font-bold text-center">加载失败</h2>
+          </Card>
         )}
       </section>
     </DefaultLayout>
