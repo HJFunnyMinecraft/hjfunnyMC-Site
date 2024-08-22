@@ -3,10 +3,10 @@ import { Skeleton } from "@nextui-org/skeleton";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 
+import styles from "./viewpassage.module.css";
+
 import DefaultLayout from "@/layouts/default";
 import { siteConfig } from "@/config/site";
-
-import styles from "./viewpassage.module.css";
 
 export default function ViewPassagePage() {
   const router = useRouter();
@@ -66,10 +66,10 @@ export default function ViewPassagePage() {
             <p>{String(post["date"]).replace("T", " ")}</p>
             <Card className="mt-5 p-5">
               <div
-                className={styles.content}
                 dangerouslySetInnerHTML={{
                   __html: post["content"]["rendered"],
                 }}
+                className={styles.content}
               />
             </Card>
           </>
