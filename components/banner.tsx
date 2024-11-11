@@ -9,7 +9,7 @@ export default function Banner() {
       className="flex justify-center items-center w-full h-svh"
       style={{
         backgroundImage:
-          "url(http://static.mc.hjfunny.site/imgs/hjmc3-center.png)",
+          "url(http://static.mc.hjfunny.site/imgs/hjmc3-center.webp)",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
       }}
