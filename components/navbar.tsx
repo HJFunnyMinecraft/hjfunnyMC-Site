@@ -21,16 +21,11 @@ export const Navbar = () => {
 
   useEffect(() => {
     async function fetchData() {
-      fetch("/login-check", { mode: "no-cors", method: "get" })
+      fetch("/api/v1/user-info", { mode: "no-cors", method: "get" })
         .then((response) => response.json())
-        .then((data: { login: boolean }) => {
-          setLogin(data.login);
-          // console.log("用户登陆状态", data);
+        .then((data: { success: boolean }) => {
+          setLogin(data.success);
         });
-      // .catch((e) => {
-      // console.error(e);
-      // console.warn("Navbar可能无法正常工作!");
-      // });
     }
     fetchData();
   });
